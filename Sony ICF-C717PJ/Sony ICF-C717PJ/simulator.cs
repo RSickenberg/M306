@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sony_ICF_C717PJ
 {
-  public partial class Form1 : Form
+  public partial class simulator : Form
   {
-    public Form1()
+    public simulator()
     {
       InitializeComponent();
     }

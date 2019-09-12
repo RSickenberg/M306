@@ -1,6 +1,6 @@
 ﻿namespace Sony_ICF_C717PJ
 {
-  partial class Form1
+  partial class simulator
   {
     /// <summary>
     /// Variable nécessaire au concepteur.
@@ -28,10 +28,17 @@
     /// </summary>
     private void InitializeComponent()
     {
-      this.components = new System.ComponentModel.Container();
+      this.SuspendLayout();
+      // 
+      // simulator
+      // 
+      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(800, 450);
-      this.Text = "Form1";
+      this.ClientSize = new System.Drawing.Size(1239, 594);
+      this.Name = "simulator";
+      this.Text = "Sony ICF-C717PJ";
+      this.ResumeLayout(false);
+
     }
 
     #endregion
