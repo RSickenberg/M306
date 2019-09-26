@@ -44,6 +44,11 @@
       this.label3 = new System.Windows.Forms.Label();
       this.first_alarm_minuts_unit = new System.Windows.Forms.Label();
       this.second_alarm_minuts_unit = new System.Windows.Forms.Label();
+      this.waves_button = new System.Windows.Forms.Button();
+      this.birds_button = new System.Windows.Forms.Button();
+      this.rain_button = new System.Windows.Forms.Button();
+      this.river_button = new System.Windows.Forms.Button();
+      this.aquatic_btn = new System.Windows.Forms.Button();
       this.groupBox1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
       this.groupBox2.SuspendLayout();
@@ -52,6 +57,11 @@
       // 
       // groupBox1
       // 
+      this.groupBox1.Controls.Add(this.aquatic_btn);
+      this.groupBox1.Controls.Add(this.river_button);
+      this.groupBox1.Controls.Add(this.rain_button);
+      this.groupBox1.Controls.Add(this.birds_button);
+      this.groupBox1.Controls.Add(this.waves_button);
       this.groupBox1.Controls.Add(this.pictureBox1);
       this.groupBox1.Location = new System.Drawing.Point(35, 36);
       this.groupBox1.Name = "groupBox1";
@@ -234,6 +244,57 @@
       this.second_alarm_minuts_unit.Text = "0";
       this.second_alarm_minuts_unit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
       // 
+      // waves_button
+      // 
+      this.waves_button.BackColor = System.Drawing.Color.Transparent;
+      this.waves_button.BackgroundImage = global::Sony_ICF_C717PJ.Properties.Resources.waves;
+      this.waves_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.waves_button.Location = new System.Drawing.Point(496, 94);
+      this.waves_button.Name = "waves_button";
+      this.waves_button.Size = new System.Drawing.Size(151, 73);
+      this.waves_button.TabIndex = 1;
+      this.waves_button.UseVisualStyleBackColor = false;
+      // 
+      // birds_button
+      // 
+      this.birds_button.BackgroundImage = global::Sony_ICF_C717PJ.Properties.Resources.birds;
+      this.birds_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.birds_button.Location = new System.Drawing.Point(669, 94);
+      this.birds_button.Name = "birds_button";
+      this.birds_button.Size = new System.Drawing.Size(167, 75);
+      this.birds_button.TabIndex = 2;
+      this.birds_button.UseVisualStyleBackColor = true;
+      // 
+      // rain_button
+      // 
+      this.rain_button.BackgroundImage = global::Sony_ICF_C717PJ.Properties.Resources.rain;
+      this.rain_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.rain_button.Location = new System.Drawing.Point(868, 94);
+      this.rain_button.Name = "rain_button";
+      this.rain_button.Size = new System.Drawing.Size(142, 75);
+      this.rain_button.TabIndex = 3;
+      this.rain_button.UseVisualStyleBackColor = true;
+      // 
+      // river_button
+      // 
+      this.river_button.BackgroundImage = global::Sony_ICF_C717PJ.Properties.Resources.wind;
+      this.river_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.river_button.Location = new System.Drawing.Point(1048, 94);
+      this.river_button.Name = "river_button";
+      this.river_button.Size = new System.Drawing.Size(142, 75);
+      this.river_button.TabIndex = 4;
+      this.river_button.UseVisualStyleBackColor = true;
+      // 
+      // aquatic_btn
+      // 
+      this.aquatic_btn.BackgroundImage = global::Sony_ICF_C717PJ.Properties.Resources.aquatic;
+      this.aquatic_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.aquatic_btn.Location = new System.Drawing.Point(1232, 94);
+      this.aquatic_btn.Name = "aquatic_btn";
+      this.aquatic_btn.Size = new System.Drawing.Size(142, 75);
+      this.aquatic_btn.TabIndex = 5;
+      this.aquatic_btn.UseVisualStyleBackColor = true;
+      // 
       // simulator
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -273,6 +334,11 @@
     private System.Windows.Forms.Label label3;
     private System.Windows.Forms.Label second_alarm_hour_unit;
     private System.Windows.Forms.Label first_alarm_hour_unit;
+    private System.Windows.Forms.Button birds_button;
+    private System.Windows.Forms.Button waves_button;
+    private System.Windows.Forms.Button rain_button;
+    private System.Windows.Forms.Button aquatic_btn;
+    private System.Windows.Forms.Button river_button;
   }
 }
 
