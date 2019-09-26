@@ -34,7 +34,7 @@
       this.first_hour_unit = new System.Windows.Forms.Label();
       this.pictureBox2 = new System.Windows.Forms.PictureBox();
       this.double_dot_1 = new System.Windows.Forms.Label();
-      this.label1 = new System.Windows.Forms.Label();
+      this.second_hour_unit = new System.Windows.Forms.Label();
       this.groupBox1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
       this.groupBox2.SuspendLayout();
@@ -63,7 +63,7 @@
       // 
       // groupBox2
       // 
-      this.groupBox2.Controls.Add(this.label1);
+      this.groupBox2.Controls.Add(this.second_hour_unit);
       this.groupBox2.Controls.Add(this.double_dot_1);
       this.groupBox2.Controls.Add(this.first_hour_unit);
       this.groupBox2.Controls.Add(this.pictureBox2);
@@ -106,21 +106,22 @@
       this.double_dot_1.Text = ":";
       this.double_dot_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
-      // label1
+      // second_hour_unit
       // 
-      this.label1.BackColor = System.Drawing.Color.White;
-      this.label1.Font = new System.Drawing.Font("Digital-7", 140F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label1.Location = new System.Drawing.Point(745, 139);
-      this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(224, 305);
-      this.label1.TabIndex = 3;
-      this.label1.Text = "0";
-      this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+      this.second_hour_unit.BackColor = System.Drawing.Color.White;
+      this.second_hour_unit.Font = new System.Drawing.Font("Digital-7", 140F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.second_hour_unit.Location = new System.Drawing.Point(745, 139);
+      this.second_hour_unit.Name = "second_hour_unit";
+      this.second_hour_unit.Size = new System.Drawing.Size(224, 305);
+      this.second_hour_unit.TabIndex = 3;
+      this.second_hour_unit.Text = "0";
+      this.second_hour_unit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
       // 
       // simulator
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.AutoSize = true;
       this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
       this.ClientSize = new System.Drawing.Size(2478, 1340);
       this.Controls.Add(this.groupBox2);
@@ -143,7 +144,7 @@
     private System.Windows.Forms.GroupBox groupBox2;
     private System.Windows.Forms.PictureBox pictureBox2;
     private System.Windows.Forms.Label first_hour_unit;
-    private System.Windows.Forms.Label label1;
+    private System.Windows.Forms.Label second_hour_unit;
     private System.Windows.Forms.Label double_dot_1;
   }
 }
