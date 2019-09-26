@@ -118,6 +118,16 @@ namespace Sony_ICF_C717PJ.Properties {
         }
         
         /// <summary>
+        ///   Recherche une ressource localisée de type System.Byte[].
+        /// </summary>
+        internal static byte[] digital_7 {
+            get {
+                object obj = ResourceManager.GetObject("digital_7", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap display {

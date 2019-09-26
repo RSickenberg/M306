@@ -88,6 +88,8 @@
     <None Include="Resources\aquarium.m4a" />
     <None Include="Resources\beach.m4a" />
     <None Include="Resources\birds.m4a" />
+    <None Include="Resources\digital-7.ttf" />
+    <None Include="Resources\digital-7.zip" />
     <None Include="Resources\rain.m4a" />
     <None Include="Resources\waves.m4a" />
   </ItemGroup>
