@@ -61,6 +61,15 @@ namespace Sony_ICF_C717PJ.Properties {
         }
         
         /// <summary>
+        ///   Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream aquarium {
+            get {
+                return ResourceManager.GetStream("aquarium", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap aquatic {
@@ -81,6 +90,15 @@ namespace Sony_ICF_C717PJ.Properties {
         }
         
         /// <summary>
+        ///   Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream beach {
+            get {
+                return ResourceManager.GetStream("beach", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap birds {
@@ -91,11 +109,30 @@ namespace Sony_ICF_C717PJ.Properties {
         }
         
         /// <summary>
+        ///   Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream birds1 {
+            get {
+                return ResourceManager.GetStream("birds1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap display {
             get {
                 object obj = ResourceManager.GetObject("display", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap display_without_numbers {
+            get {
+                object obj = ResourceManager.GetObject("display_without_numbers", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -121,6 +158,15 @@ namespace Sony_ICF_C717PJ.Properties {
         }
         
         /// <summary>
+        ///   Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream rain1 {
+            get {
+                return ResourceManager.GetStream("rain1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap top {
@@ -137,6 +183,15 @@ namespace Sony_ICF_C717PJ.Properties {
             get {
                 object obj = ResourceManager.GetObject("waves", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream waves1 {
+            get {
+                return ResourceManager.GetStream("waves1", resourceCulture);
             }
         }
         

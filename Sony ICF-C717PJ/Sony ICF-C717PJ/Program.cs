@@ -16,7 +16,7 @@ namespace Sony_ICF_C717PJ
     {
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
-      Application.Run(new simulator());
+      Application.Run(new Form());
     }
   }
 }
