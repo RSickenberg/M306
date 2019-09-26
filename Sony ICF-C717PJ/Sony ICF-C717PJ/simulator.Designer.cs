@@ -35,6 +35,15 @@
       this.pictureBox2 = new System.Windows.Forms.PictureBox();
       this.double_dot_1 = new System.Windows.Forms.Label();
       this.second_hour_unit = new System.Windows.Forms.Label();
+      this.first_minuts_units = new System.Windows.Forms.Label();
+      this.second_minuts_units = new System.Windows.Forms.Label();
+      this.first_temp_value = new System.Windows.Forms.Label();
+      this.second_temp_unit = new System.Windows.Forms.Label();
+      this.first_alarm_hour_unit = new System.Windows.Forms.Label();
+      this.second_alarm_hour_unit = new System.Windows.Forms.Label();
+      this.label3 = new System.Windows.Forms.Label();
+      this.first_alarm_minuts_unit = new System.Windows.Forms.Label();
+      this.second_alarm_minuts_unit = new System.Windows.Forms.Label();
       this.groupBox1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
       this.groupBox2.SuspendLayout();
@@ -63,6 +72,15 @@
       // 
       // groupBox2
       // 
+      this.groupBox2.Controls.Add(this.second_alarm_minuts_unit);
+      this.groupBox2.Controls.Add(this.first_alarm_minuts_unit);
+      this.groupBox2.Controls.Add(this.label3);
+      this.groupBox2.Controls.Add(this.second_alarm_hour_unit);
+      this.groupBox2.Controls.Add(this.first_alarm_hour_unit);
+      this.groupBox2.Controls.Add(this.second_temp_unit);
+      this.groupBox2.Controls.Add(this.first_temp_value);
+      this.groupBox2.Controls.Add(this.second_minuts_units);
+      this.groupBox2.Controls.Add(this.first_minuts_units);
       this.groupBox2.Controls.Add(this.second_hour_unit);
       this.groupBox2.Controls.Add(this.double_dot_1);
       this.groupBox2.Controls.Add(this.first_hour_unit);
@@ -78,7 +96,7 @@
       // 
       this.first_hour_unit.BackColor = System.Drawing.Color.White;
       this.first_hour_unit.Font = new System.Drawing.Font("Digital-7", 140F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.first_hour_unit.Location = new System.Drawing.Point(460, 141);
+      this.first_hour_unit.Location = new System.Drawing.Point(469, 141);
       this.first_hour_unit.Name = "first_hour_unit";
       this.first_hour_unit.Size = new System.Drawing.Size(262, 303);
       this.first_hour_unit.TabIndex = 1;
@@ -117,11 +135,111 @@
       this.second_hour_unit.Text = "0";
       this.second_hour_unit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
       // 
+      // first_minuts_units
+      // 
+      this.first_minuts_units.BackColor = System.Drawing.Color.White;
+      this.first_minuts_units.Font = new System.Drawing.Font("Digital-7", 140F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.first_minuts_units.Location = new System.Drawing.Point(1150, 141);
+      this.first_minuts_units.Name = "first_minuts_units";
+      this.first_minuts_units.Size = new System.Drawing.Size(224, 305);
+      this.first_minuts_units.TabIndex = 4;
+      this.first_minuts_units.Text = "0";
+      this.first_minuts_units.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+      // 
+      // second_minuts_units
+      // 
+      this.second_minuts_units.BackColor = System.Drawing.Color.White;
+      this.second_minuts_units.Font = new System.Drawing.Font("Digital-7", 140F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.second_minuts_units.Location = new System.Drawing.Point(1416, 141);
+      this.second_minuts_units.Name = "second_minuts_units";
+      this.second_minuts_units.Size = new System.Drawing.Size(224, 305);
+      this.second_minuts_units.TabIndex = 5;
+      this.second_minuts_units.Text = "0";
+      this.second_minuts_units.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+      // 
+      // first_temp_value
+      // 
+      this.first_temp_value.BackColor = System.Drawing.Color.White;
+      this.first_temp_value.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.first_temp_value.Location = new System.Drawing.Point(1780, 311);
+      this.first_temp_value.Name = "first_temp_value";
+      this.first_temp_value.Size = new System.Drawing.Size(108, 147);
+      this.first_temp_value.TabIndex = 6;
+      this.first_temp_value.Text = "0";
+      this.first_temp_value.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+      // 
+      // second_temp_unit
+      // 
+      this.second_temp_unit.BackColor = System.Drawing.Color.White;
+      this.second_temp_unit.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.second_temp_unit.Location = new System.Drawing.Point(1866, 311);
+      this.second_temp_unit.Name = "second_temp_unit";
+      this.second_temp_unit.Size = new System.Drawing.Size(108, 147);
+      this.second_temp_unit.TabIndex = 7;
+      this.second_temp_unit.Text = "0";
+      this.second_temp_unit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+      // 
+      // first_alarm_hour_unit
+      // 
+      this.first_alarm_hour_unit.BackColor = System.Drawing.Color.White;
+      this.first_alarm_hour_unit.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.first_alarm_hour_unit.Location = new System.Drawing.Point(1904, 151);
+      this.first_alarm_hour_unit.Name = "first_alarm_hour_unit";
+      this.first_alarm_hour_unit.Size = new System.Drawing.Size(92, 117);
+      this.first_alarm_hour_unit.TabIndex = 8;
+      this.first_alarm_hour_unit.Text = "0";
+      this.first_alarm_hour_unit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+      // 
+      // second_alarm_hour_unit
+      // 
+      this.second_alarm_hour_unit.BackColor = System.Drawing.Color.White;
+      this.second_alarm_hour_unit.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.second_alarm_hour_unit.Location = new System.Drawing.Point(1978, 151);
+      this.second_alarm_hour_unit.Name = "second_alarm_hour_unit";
+      this.second_alarm_hour_unit.Size = new System.Drawing.Size(92, 117);
+      this.second_alarm_hour_unit.TabIndex = 9;
+      this.second_alarm_hour_unit.Text = "0";
+      this.second_alarm_hour_unit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+      // 
+      // label3
+      // 
+      this.label3.BackColor = System.Drawing.Color.White;
+      this.label3.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label3.Location = new System.Drawing.Point(2050, 151);
+      this.label3.Name = "label3";
+      this.label3.Size = new System.Drawing.Size(92, 117);
+      this.label3.TabIndex = 10;
+      this.label3.Text = ":";
+      this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+      // 
+      // first_alarm_minuts_unit
+      // 
+      this.first_alarm_minuts_unit.BackColor = System.Drawing.Color.White;
+      this.first_alarm_minuts_unit.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.first_alarm_minuts_unit.Location = new System.Drawing.Point(2110, 151);
+      this.first_alarm_minuts_unit.Name = "first_alarm_minuts_unit";
+      this.first_alarm_minuts_unit.Size = new System.Drawing.Size(92, 117);
+      this.first_alarm_minuts_unit.TabIndex = 11;
+      this.first_alarm_minuts_unit.Text = "0";
+      this.first_alarm_minuts_unit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+      // 
+      // second_alarm_minuts_unit
+      // 
+      this.second_alarm_minuts_unit.BackColor = System.Drawing.Color.White;
+      this.second_alarm_minuts_unit.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.second_alarm_minuts_unit.Location = new System.Drawing.Point(2188, 151);
+      this.second_alarm_minuts_unit.Name = "second_alarm_minuts_unit";
+      this.second_alarm_minuts_unit.Size = new System.Drawing.Size(92, 117);
+      this.second_alarm_minuts_unit.TabIndex = 12;
+      this.second_alarm_minuts_unit.Text = "0";
+      this.second_alarm_minuts_unit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+      // 
       // simulator
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.AutoSize = true;
+      this.BackColor = System.Drawing.Color.White;
       this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
       this.ClientSize = new System.Drawing.Size(2478, 1340);
       this.Controls.Add(this.groupBox2);
@@ -146,6 +264,15 @@
     private System.Windows.Forms.Label first_hour_unit;
     private System.Windows.Forms.Label second_hour_unit;
     private System.Windows.Forms.Label double_dot_1;
+    private System.Windows.Forms.Label second_minuts_units;
+    private System.Windows.Forms.Label first_minuts_units;
+    private System.Windows.Forms.Label second_temp_unit;
+    private System.Windows.Forms.Label first_temp_value;
+    private System.Windows.Forms.Label second_alarm_minuts_unit;
+    private System.Windows.Forms.Label first_alarm_minuts_unit;
+    private System.Windows.Forms.Label label3;
+    private System.Windows.Forms.Label second_alarm_hour_unit;
+    private System.Windows.Forms.Label first_alarm_hour_unit;
   }
 }
 
