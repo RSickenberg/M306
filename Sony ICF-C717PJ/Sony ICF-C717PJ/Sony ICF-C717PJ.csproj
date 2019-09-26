@@ -52,6 +52,11 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="simulator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,15 +69,10 @@
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="simulator.resx">
       <DependentUpon>simulator.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,13 +85,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Resources\aquarium.m4a" />
-    <None Include="Resources\beach.m4a" />
-    <None Include="Resources\birds.m4a" />
-    <None Include="Resources\digital-7.ttf" />
-    <None Include="Resources\digital-7.zip" />
-    <None Include="Resources\rain.m4a" />
-    <None Include="Resources\waves.m4a" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -137,6 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\waves.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\display_without_numbers.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
