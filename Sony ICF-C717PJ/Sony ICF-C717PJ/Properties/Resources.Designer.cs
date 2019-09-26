@@ -8,64 +8,146 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sony_ICF_C717PJ.Properties
-{
-
-
-  /// <summary>
-  ///   Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
-  /// </summary>
-  // Cette classe a été générée automatiquement par la classe StronglyTypedResourceBuilder
-  // à l'aide d'un outil, tel que ResGen ou Visual Studio.
-  // Pour ajouter ou supprimer un membre, modifiez votre fichier .ResX, puis réexécutez ResGen
-  // avec l'option /str ou régénérez votre projet VS.
-  [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-  [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-  internal class Resources
-  {
-
-    private static global::System.Resources.ResourceManager resourceMan;
-
-    private static global::System.Globalization.CultureInfo resourceCulture;
-
-    [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-    internal Resources()
-    {
-    }
-
+namespace Sony_ICF_C717PJ.Properties {
+    using System;
+    
+    
     /// <summary>
-    ///   Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+    ///   Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
     /// </summary>
-    [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-    internal static global::System.Resources.ResourceManager ResourceManager
-    {
-      get
-      {
-        if ((resourceMan == null))
-        {
-          global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sony_ICF_C717PJ.Properties.Resources", typeof(Resources).Assembly);
-          resourceMan = temp;
+    // Cette classe a été générée automatiquement par la classe StronglyTypedResourceBuilder
+    // à l'aide d'un outil, tel que ResGen ou Visual Studio.
+    // Pour ajouter ou supprimer un membre, modifiez votre fichier .ResX, puis réexécutez ResGen
+    // avec l'option /str ou régénérez votre projet VS.
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
         }
-        return resourceMan;
-      }
+        
+        /// <summary>
+        ///   Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sony_ICF_C717PJ.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Remplace la propriété CurrentUICulture du thread actuel pour toutes
+        ///   les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aquatic {
+            get {
+                object obj = ResourceManager.GetObject("aquatic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap back {
+            get {
+                object obj = ResourceManager.GetObject("back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap birds {
+            get {
+                object obj = ResourceManager.GetObject("birds", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap display {
+            get {
+                object obj = ResourceManager.GetObject("display", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap projection_focus {
+            get {
+                object obj = ResourceManager.GetObject("projection_focus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rain {
+            get {
+                object obj = ResourceManager.GetObject("rain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap top {
+            get {
+                object obj = ResourceManager.GetObject("top", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap waves {
+            get {
+                object obj = ResourceManager.GetObject("waves", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wind {
+            get {
+                object obj = ResourceManager.GetObject("wind", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
-
-    /// <summary>
-    ///   Remplace la propriété CurrentUICulture du thread actuel pour toutes
-    ///   les recherches de ressources à l'aide de cette classe de ressource fortement typée.
-    /// </summary>
-    [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-    internal static global::System.Globalization.CultureInfo Culture
-    {
-      get
-      {
-        return resourceCulture;
-      }
-      set
-      {
-        resourceCulture = value;
-      }
-    }
-  }
 }
