@@ -586,6 +586,7 @@
       this.hide_b_alarm.Size = new System.Drawing.Size(62, 54);
       this.hide_b_alarm.TabIndex = 19;
       this.hide_b_alarm.TabStop = false;
+      this.hide_b_alarm.Visible = false;
       // 
       // second_alarm_minuts_unit
       // 
