@@ -49,7 +49,14 @@
       this.double_dot_1 = new System.Windows.Forms.Label();
       this.first_hour_unit = new System.Windows.Forms.Label();
       this.pictureBox2 = new System.Windows.Forms.PictureBox();
-      this.button1 = new System.Windows.Forms.Button();
+      this.alarm_off_btn = new System.Windows.Forms.Button();
+      this.radio_btn = new System.Windows.Forms.Button();
+      this.sleep_btn = new System.Windows.Forms.Button();
+      this.alarm_b_toggle_btn = new System.Windows.Forms.Button();
+      this.alarm_a_toggle_btn = new System.Windows.Forms.Button();
+      this.snooze_btn = new System.Windows.Forms.Button();
+      this.vol_minus_btn = new System.Windows.Forms.Button();
+      this.vol_plus_btn = new System.Windows.Forms.Button();
       this.groupBox1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
       this.groupBox2.SuspendLayout();
@@ -58,7 +65,14 @@
       // 
       // groupBox1
       // 
-      this.groupBox1.Controls.Add(this.button1);
+      this.groupBox1.Controls.Add(this.vol_plus_btn);
+      this.groupBox1.Controls.Add(this.vol_minus_btn);
+      this.groupBox1.Controls.Add(this.snooze_btn);
+      this.groupBox1.Controls.Add(this.alarm_a_toggle_btn);
+      this.groupBox1.Controls.Add(this.alarm_b_toggle_btn);
+      this.groupBox1.Controls.Add(this.sleep_btn);
+      this.groupBox1.Controls.Add(this.radio_btn);
+      this.groupBox1.Controls.Add(this.alarm_off_btn);
       this.groupBox1.Controls.Add(this.aquatic_btn);
       this.groupBox1.Controls.Add(this.river_button);
       this.groupBox1.Controls.Add(this.rain_button);
@@ -297,16 +311,112 @@
       this.pictureBox2.TabIndex = 0;
       this.pictureBox2.TabStop = false;
       // 
-      // button1
+      // alarm_off_btn
       // 
-      this.button1.BackColor = System.Drawing.Color.Transparent;
-      this.button1.ForeColor = System.Drawing.Color.Black;
-      this.button1.Location = new System.Drawing.Point(1418, 94);
-      this.button1.Name = "button1";
-      this.button1.Size = new System.Drawing.Size(132, 75);
-      this.button1.TabIndex = 6;
-      this.button1.Text = "button1";
-      this.button1.UseVisualStyleBackColor = false;
+      this.alarm_off_btn.BackColor = System.Drawing.Color.Transparent;
+      this.alarm_off_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+      this.alarm_off_btn.FlatAppearance.BorderSize = 2;
+      this.alarm_off_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+      this.alarm_off_btn.ForeColor = System.Drawing.Color.Black;
+      this.alarm_off_btn.Location = new System.Drawing.Point(1404, 94);
+      this.alarm_off_btn.Name = "alarm_off_btn";
+      this.alarm_off_btn.Size = new System.Drawing.Size(162, 75);
+      this.alarm_off_btn.TabIndex = 6;
+      this.alarm_off_btn.Text = "OFF";
+      this.alarm_off_btn.UseVisualStyleBackColor = false;
+      // 
+      // radio_btn
+      // 
+      this.radio_btn.Location = new System.Drawing.Point(1592, 94);
+      this.radio_btn.Name = "radio_btn";
+      this.radio_btn.Size = new System.Drawing.Size(150, 75);
+      this.radio_btn.TabIndex = 7;
+      this.radio_btn.Text = "RADIO";
+      this.radio_btn.UseVisualStyleBackColor = true;
+      // 
+      // sleep_btn
+      // 
+      this.sleep_btn.BackColor = System.Drawing.Color.Transparent;
+      this.sleep_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+      this.sleep_btn.FlatAppearance.BorderSize = 2;
+      this.sleep_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+      this.sleep_btn.ForeColor = System.Drawing.Color.Black;
+      this.sleep_btn.Location = new System.Drawing.Point(1767, 94);
+      this.sleep_btn.Name = "sleep_btn";
+      this.sleep_btn.Size = new System.Drawing.Size(162, 75);
+      this.sleep_btn.TabIndex = 8;
+      this.sleep_btn.Text = "SLEEP";
+      this.sleep_btn.UseVisualStyleBackColor = false;
+      // 
+      // alarm_b_toggle_btn
+      // 
+      this.alarm_b_toggle_btn.BackColor = System.Drawing.Color.Transparent;
+      this.alarm_b_toggle_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+      this.alarm_b_toggle_btn.FlatAppearance.BorderSize = 2;
+      this.alarm_b_toggle_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+      this.alarm_b_toggle_btn.ForeColor = System.Drawing.Color.Black;
+      this.alarm_b_toggle_btn.Location = new System.Drawing.Point(2025, 94);
+      this.alarm_b_toggle_btn.Name = "alarm_b_toggle_btn";
+      this.alarm_b_toggle_btn.Size = new System.Drawing.Size(342, 75);
+      this.alarm_b_toggle_btn.TabIndex = 9;
+      this.alarm_b_toggle_btn.Text = "ALARM ON/OFF    B";
+      this.alarm_b_toggle_btn.UseVisualStyleBackColor = false;
+      // 
+      // alarm_a_toggle_btn
+      // 
+      this.alarm_a_toggle_btn.BackColor = System.Drawing.Color.Transparent;
+      this.alarm_a_toggle_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+      this.alarm_a_toggle_btn.FlatAppearance.BorderSize = 2;
+      this.alarm_a_toggle_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+      this.alarm_a_toggle_btn.ForeColor = System.Drawing.Color.Black;
+      this.alarm_a_toggle_btn.Location = new System.Drawing.Point(55, 92);
+      this.alarm_a_toggle_btn.Name = "alarm_a_toggle_btn";
+      this.alarm_a_toggle_btn.Size = new System.Drawing.Size(342, 75);
+      this.alarm_a_toggle_btn.TabIndex = 10;
+      this.alarm_a_toggle_btn.Text = "ALARM ON/OFF    A";
+      this.alarm_a_toggle_btn.UseVisualStyleBackColor = false;
+      // 
+      // snooze_btn
+      // 
+      this.snooze_btn.BackColor = System.Drawing.Color.Transparent;
+      this.snooze_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+      this.snooze_btn.FlatAppearance.BorderSize = 2;
+      this.snooze_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+      this.snooze_btn.ForeColor = System.Drawing.Color.Black;
+      this.snooze_btn.Location = new System.Drawing.Point(473, 376);
+      this.snooze_btn.Name = "snooze_btn";
+      this.snooze_btn.Size = new System.Drawing.Size(1476, 121);
+      this.snooze_btn.TabIndex = 11;
+      this.snooze_btn.Text = "SNOOZE / BRIGHTNESS";
+      this.snooze_btn.UseVisualStyleBackColor = false;
+      // 
+      // vol_minus_btn
+      // 
+      this.vol_minus_btn.BackColor = System.Drawing.Color.Transparent;
+      this.vol_minus_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+      this.vol_minus_btn.FlatAppearance.BorderSize = 2;
+      this.vol_minus_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+      this.vol_minus_btn.ForeColor = System.Drawing.Color.Black;
+      this.vol_minus_btn.Location = new System.Drawing.Point(2025, 376);
+      this.vol_minus_btn.Name = "vol_minus_btn";
+      this.vol_minus_btn.Size = new System.Drawing.Size(129, 121);
+      this.vol_minus_btn.TabIndex = 12;
+      this.vol_minus_btn.Text = "-";
+      this.vol_minus_btn.UseVisualStyleBackColor = false;
+      // 
+      // vol_plus_btn
+      // 
+      this.vol_plus_btn.BackColor = System.Drawing.Color.Transparent;
+      this.vol_plus_btn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+      this.vol_plus_btn.FlatAppearance.BorderSize = 2;
+      this.vol_plus_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+      this.vol_plus_btn.ForeColor = System.Drawing.Color.Black;
+      this.vol_plus_btn.Location = new System.Drawing.Point(2235, 376);
+      this.vol_plus_btn.Name = "vol_plus_btn";
+      this.vol_plus_btn.Size = new System.Drawing.Size(129, 121);
+      this.vol_plus_btn.TabIndex = 13;
+      this.vol_plus_btn.Text = "+";
+      this.vol_plus_btn.UseVisualStyleBackColor = false;
       // 
       // simulator
       // 
@@ -352,7 +462,14 @@
     private System.Windows.Forms.Button rain_button;
     private System.Windows.Forms.Button aquatic_btn;
     private System.Windows.Forms.Button river_button;
-    private System.Windows.Forms.Button button1;
+    private System.Windows.Forms.Button alarm_off_btn;
+    private System.Windows.Forms.Button snooze_btn;
+    private System.Windows.Forms.Button alarm_a_toggle_btn;
+    private System.Windows.Forms.Button alarm_b_toggle_btn;
+    private System.Windows.Forms.Button sleep_btn;
+    private System.Windows.Forms.Button radio_btn;
+    private System.Windows.Forms.Button vol_plus_btn;
+    private System.Windows.Forms.Button vol_minus_btn;
   }
 }
 
