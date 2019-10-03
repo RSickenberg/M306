@@ -499,7 +499,7 @@
       // B_Alarm
       // 
       this.B_Alarm.BackColor = System.Drawing.Color.Transparent;
-      this.B_Alarm.Location = new System.Drawing.Point(2169, 351);
+      this.B_Alarm.Location = new System.Drawing.Point(2171, 354);
       this.B_Alarm.Name = "B_Alarm";
       this.B_Alarm.Size = new System.Drawing.Size(128, 109);
       this.B_Alarm.TabIndex = 28;
