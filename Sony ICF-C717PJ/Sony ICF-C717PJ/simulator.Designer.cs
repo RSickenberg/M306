@@ -7,27 +7,23 @@
     /// </summary>
     private System.ComponentModel.IContainer components = null;
 
-    /// <summary>
-    /// Nettoyage des ressources utilisées.
-    /// </summary>
-    /// <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
-    protected override void Dispose(bool disposing)
-    {
-      if (disposing && (components != null))
-      {
-        components.Dispose();
-      }
-      base.Dispose(disposing);
-    }
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-    #region Code généré par le Concepteur Windows Form
+        #region Code généré par le Concepteur Windows Form
 
-    /// <summary>
-    /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
-    /// le contenu de cette méthode avec l'éditeur de code.
-    /// </summary>
-    private void InitializeComponent()
-    {
+        /// <summary>
+        /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
+        /// le contenu de cette méthode avec l'éditeur de code.
+        /// </summary>
+        private void InitializeComponent()
+        {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.time_set_plus_B_btn = new System.Windows.Forms.Button();
@@ -133,9 +129,9 @@
             this.groupBox1.Controls.Add(this.waves_button);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Location = new System.Drawing.Point(18, 19);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Size = new System.Drawing.Size(1206, 286);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -145,7 +141,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Location = new System.Drawing.Point(28, 196);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(177, 68);
             this.pictureBox3.TabIndex = 18;
@@ -159,7 +155,7 @@
             this.time_set_plus_B_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.time_set_plus_B_btn.ForeColor = System.Drawing.Color.Black;
             this.time_set_plus_B_btn.Location = new System.Drawing.Point(1135, 112);
-            this.time_set_plus_B_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.time_set_plus_B_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.time_set_plus_B_btn.Name = "time_set_plus_B_btn";
             this.time_set_plus_B_btn.Size = new System.Drawing.Size(40, 35);
             this.time_set_plus_B_btn.TabIndex = 17;
@@ -174,7 +170,6 @@
             this.time_set_minus_B_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.time_set_minus_B_btn.ForeColor = System.Drawing.Color.Black;
             this.time_set_minus_B_btn.Location = new System.Drawing.Point(1012, 112);
-            this.time_set_minus_B_btn.Margin = new System.Windows.Forms.Padding(2);
             this.time_set_minus_B_btn.Name = "time_set_minus_B_btn";
             this.time_set_minus_B_btn.Size = new System.Drawing.Size(40, 35);
             this.time_set_minus_B_btn.TabIndex = 16;
@@ -189,7 +184,7 @@
             this.time_set_plus_A_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.time_set_plus_A_btn.ForeColor = System.Drawing.Color.Black;
             this.time_set_plus_A_btn.Location = new System.Drawing.Point(158, 112);
-            this.time_set_plus_A_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.time_set_plus_A_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.time_set_plus_A_btn.Name = "time_set_plus_A_btn";
             this.time_set_plus_A_btn.Size = new System.Drawing.Size(40, 35);
             this.time_set_plus_A_btn.TabIndex = 15;
@@ -204,7 +199,7 @@
             this.time_set_minus_A_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.time_set_minus_A_btn.ForeColor = System.Drawing.Color.Black;
             this.time_set_minus_A_btn.Location = new System.Drawing.Point(28, 112);
-            this.time_set_minus_A_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.time_set_minus_A_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.time_set_minus_A_btn.Name = "time_set_minus_A_btn";
             this.time_set_minus_A_btn.Size = new System.Drawing.Size(40, 35);
             this.time_set_minus_A_btn.TabIndex = 14;
@@ -219,7 +214,7 @@
             this.vol_plus_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.vol_plus_btn.ForeColor = System.Drawing.Color.Black;
             this.vol_plus_btn.Location = new System.Drawing.Point(1122, 210);
-            this.vol_plus_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.vol_plus_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.vol_plus_btn.Name = "vol_plus_btn";
             this.vol_plus_btn.Size = new System.Drawing.Size(44, 37);
             this.vol_plus_btn.TabIndex = 13;
@@ -234,7 +229,7 @@
             this.vol_minus_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.vol_minus_btn.ForeColor = System.Drawing.Color.Black;
             this.vol_minus_btn.Location = new System.Drawing.Point(1030, 210);
-            this.vol_minus_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.vol_minus_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.vol_minus_btn.Name = "vol_minus_btn";
             this.vol_minus_btn.Size = new System.Drawing.Size(40, 35);
             this.vol_minus_btn.TabIndex = 12;
@@ -249,7 +244,7 @@
             this.snooze_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.snooze_btn.ForeColor = System.Drawing.Color.Black;
             this.snooze_btn.Location = new System.Drawing.Point(236, 196);
-            this.snooze_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.snooze_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.snooze_btn.Name = "snooze_btn";
             this.snooze_btn.Size = new System.Drawing.Size(738, 63);
             this.snooze_btn.TabIndex = 11;
@@ -264,7 +259,7 @@
             this.alarm_a_toggle_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.alarm_a_toggle_btn.ForeColor = System.Drawing.Color.Black;
             this.alarm_a_toggle_btn.Location = new System.Drawing.Point(28, 48);
-            this.alarm_a_toggle_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.alarm_a_toggle_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.alarm_a_toggle_btn.Name = "alarm_a_toggle_btn";
             this.alarm_a_toggle_btn.Size = new System.Drawing.Size(171, 39);
             this.alarm_a_toggle_btn.TabIndex = 10;
@@ -279,7 +274,7 @@
             this.alarm_b_toggle_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.alarm_b_toggle_btn.ForeColor = System.Drawing.Color.Black;
             this.alarm_b_toggle_btn.Location = new System.Drawing.Point(1012, 49);
-            this.alarm_b_toggle_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.alarm_b_toggle_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.alarm_b_toggle_btn.Name = "alarm_b_toggle_btn";
             this.alarm_b_toggle_btn.Size = new System.Drawing.Size(171, 39);
             this.alarm_b_toggle_btn.TabIndex = 9;
@@ -294,7 +289,7 @@
             this.sleep_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.sleep_btn.ForeColor = System.Drawing.Color.Black;
             this.sleep_btn.Location = new System.Drawing.Point(884, 49);
-            this.sleep_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.sleep_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sleep_btn.Name = "sleep_btn";
             this.sleep_btn.Size = new System.Drawing.Size(81, 39);
             this.sleep_btn.TabIndex = 8;
@@ -304,7 +299,7 @@
             // radio_btn
             // 
             this.radio_btn.Location = new System.Drawing.Point(796, 49);
-            this.radio_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.radio_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radio_btn.Name = "radio_btn";
             this.radio_btn.Size = new System.Drawing.Size(75, 39);
             this.radio_btn.TabIndex = 7;
@@ -319,7 +314,7 @@
             this.alarm_off_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.alarm_off_btn.ForeColor = System.Drawing.Color.Black;
             this.alarm_off_btn.Location = new System.Drawing.Point(702, 49);
-            this.alarm_off_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.alarm_off_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.alarm_off_btn.Name = "alarm_off_btn";
             this.alarm_off_btn.Size = new System.Drawing.Size(81, 39);
             this.alarm_off_btn.TabIndex = 6;
@@ -331,7 +326,7 @@
             this.aquatic_btn.BackgroundImage = global::Sony_ICF_C717PJ.Properties.Resources.aquatic;
             this.aquatic_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.aquatic_btn.Location = new System.Drawing.Point(616, 49);
-            this.aquatic_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.aquatic_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.aquatic_btn.Name = "aquatic_btn";
             this.aquatic_btn.Size = new System.Drawing.Size(71, 39);
             this.aquatic_btn.TabIndex = 5;
@@ -342,7 +337,7 @@
             this.river_button.BackgroundImage = global::Sony_ICF_C717PJ.Properties.Resources.wind;
             this.river_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.river_button.Location = new System.Drawing.Point(524, 49);
-            this.river_button.Margin = new System.Windows.Forms.Padding(2);
+            this.river_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.river_button.Name = "river_button";
             this.river_button.Size = new System.Drawing.Size(71, 39);
             this.river_button.TabIndex = 4;
@@ -353,7 +348,7 @@
             this.rain_button.BackgroundImage = global::Sony_ICF_C717PJ.Properties.Resources.rain;
             this.rain_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.rain_button.Location = new System.Drawing.Point(434, 49);
-            this.rain_button.Margin = new System.Windows.Forms.Padding(2);
+            this.rain_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rain_button.Name = "rain_button";
             this.rain_button.Size = new System.Drawing.Size(71, 39);
             this.rain_button.TabIndex = 3;
@@ -364,7 +359,7 @@
             this.birds_button.BackgroundImage = global::Sony_ICF_C717PJ.Properties.Resources.birds;
             this.birds_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.birds_button.Location = new System.Drawing.Point(334, 49);
-            this.birds_button.Margin = new System.Windows.Forms.Padding(2);
+            this.birds_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.birds_button.Name = "birds_button";
             this.birds_button.Size = new System.Drawing.Size(84, 39);
             this.birds_button.TabIndex = 2;
@@ -376,7 +371,7 @@
             this.waves_button.BackgroundImage = global::Sony_ICF_C717PJ.Properties.Resources.waves;
             this.waves_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.waves_button.Location = new System.Drawing.Point(248, 49);
-            this.waves_button.Margin = new System.Windows.Forms.Padding(2);
+            this.waves_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.waves_button.Name = "waves_button";
             this.waves_button.Size = new System.Drawing.Size(76, 38);
             this.waves_button.TabIndex = 1;
@@ -387,7 +382,7 @@
             this.pictureBox1.BackgroundImage = global::Sony_ICF_C717PJ.Properties.Resources.top;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(8, 16);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1190, 254);
             this.pictureBox1.TabIndex = 0;
@@ -430,9 +425,9 @@
             this.groupBox2.Controls.Add(this.first_hour_unit);
             this.groupBox2.Controls.Add(this.pictureBox2);
             this.groupBox2.Location = new System.Drawing.Point(18, 343);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Size = new System.Drawing.Size(1206, 286);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -442,7 +437,7 @@
             // 
             this.wake_up.BackColor = System.Drawing.Color.Transparent;
             this.wake_up.Location = new System.Drawing.Point(126, 183);
-            this.wake_up.Margin = new System.Windows.Forms.Padding(2);
+            this.wake_up.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.wake_up.Name = "wake_up";
             this.wake_up.Size = new System.Drawing.Size(64, 57);
             this.wake_up.TabIndex = 39;
@@ -452,7 +447,7 @@
             // 
             this.audio_in.BackColor = System.Drawing.Color.Transparent;
             this.audio_in.Location = new System.Drawing.Point(44, 162);
-            this.audio_in.Margin = new System.Windows.Forms.Padding(2);
+            this.audio_in.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.audio_in.Name = "audio_in";
             this.audio_in.Size = new System.Drawing.Size(172, 18);
             this.audio_in.TabIndex = 38;
@@ -462,7 +457,7 @@
             // 
             this.fish_hider.BackColor = System.Drawing.Color.Transparent;
             this.fish_hider.Location = new System.Drawing.Point(113, 142);
-            this.fish_hider.Margin = new System.Windows.Forms.Padding(2);
+            this.fish_hider.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.fish_hider.Name = "fish_hider";
             this.fish_hider.Size = new System.Drawing.Size(62, 23);
             this.fish_hider.TabIndex = 37;
@@ -472,7 +467,7 @@
             // 
             this.wind_hider.BackColor = System.Drawing.Color.Transparent;
             this.wind_hider.Location = new System.Drawing.Point(59, 137);
-            this.wind_hider.Margin = new System.Windows.Forms.Padding(2);
+            this.wind_hider.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.wind_hider.Name = "wind_hider";
             this.wind_hider.Size = new System.Drawing.Size(56, 25);
             this.wind_hider.TabIndex = 36;
@@ -482,7 +477,7 @@
             // 
             this.rain_hider.BackColor = System.Drawing.Color.Transparent;
             this.rain_hider.Location = new System.Drawing.Point(158, 118);
-            this.rain_hider.Margin = new System.Windows.Forms.Padding(2);
+            this.rain_hider.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rain_hider.Name = "rain_hider";
             this.rain_hider.Size = new System.Drawing.Size(48, 25);
             this.rain_hider.TabIndex = 35;
@@ -492,7 +487,7 @@
             // 
             this.bird_hider.BackColor = System.Drawing.Color.Transparent;
             this.bird_hider.Location = new System.Drawing.Point(113, 116);
-            this.bird_hider.Margin = new System.Windows.Forms.Padding(2);
+            this.bird_hider.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bird_hider.Name = "bird_hider";
             this.bird_hider.Size = new System.Drawing.Size(48, 27);
             this.bird_hider.TabIndex = 34;
@@ -502,7 +497,7 @@
             // 
             this.waves_hider.BackColor = System.Drawing.Color.Transparent;
             this.waves_hider.Location = new System.Drawing.Point(59, 115);
-            this.waves_hider.Margin = new System.Windows.Forms.Padding(2);
+            this.waves_hider.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.waves_hider.Name = "waves_hider";
             this.waves_hider.Size = new System.Drawing.Size(56, 23);
             this.waves_hider.TabIndex = 33;
@@ -512,7 +507,7 @@
             // 
             this.nature_sound.BackColor = System.Drawing.Color.Transparent;
             this.nature_sound.Location = new System.Drawing.Point(59, 100);
-            this.nature_sound.Margin = new System.Windows.Forms.Padding(2);
+            this.nature_sound.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nature_sound.Name = "nature_sound";
             this.nature_sound.Size = new System.Drawing.Size(172, 18);
             this.nature_sound.TabIndex = 32;
@@ -522,7 +517,7 @@
             // 
             this.AM_FM_SLEEP.BackColor = System.Drawing.Color.Transparent;
             this.AM_FM_SLEEP.Location = new System.Drawing.Point(59, 79);
-            this.AM_FM_SLEEP.Margin = new System.Windows.Forms.Padding(2);
+            this.AM_FM_SLEEP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AM_FM_SLEEP.Name = "AM_FM_SLEEP";
             this.AM_FM_SLEEP.Size = new System.Drawing.Size(158, 20);
             this.AM_FM_SLEEP.TabIndex = 31;
@@ -532,7 +527,7 @@
             // 
             this.radio_buzzer.BackColor = System.Drawing.Color.Transparent;
             this.radio_buzzer.Location = new System.Drawing.Point(59, 48);
-            this.radio_buzzer.Margin = new System.Windows.Forms.Padding(2);
+            this.radio_buzzer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radio_buzzer.Name = "radio_buzzer";
             this.radio_buzzer.Size = new System.Drawing.Size(158, 28);
             this.radio_buzzer.TabIndex = 30;
@@ -542,7 +537,7 @@
             // 
             this.A_Alarm.BackColor = System.Drawing.Color.Transparent;
             this.A_Alarm.Location = new System.Drawing.Point(59, 183);
-            this.A_Alarm.Margin = new System.Windows.Forms.Padding(2);
+            this.A_Alarm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.A_Alarm.Name = "A_Alarm";
             this.A_Alarm.Size = new System.Drawing.Size(64, 57);
             this.A_Alarm.TabIndex = 29;
@@ -551,8 +546,8 @@
             // B_Alarm
             // 
             this.B_Alarm.BackColor = System.Drawing.Color.Transparent;
-            this.B_Alarm.Location = new System.Drawing.Point(1086, 184);
-            this.B_Alarm.Margin = new System.Windows.Forms.Padding(2);
+            this.B_Alarm.Location = new System.Drawing.Point(1084, 183);
+            this.B_Alarm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.B_Alarm.Name = "B_Alarm";
             this.B_Alarm.Size = new System.Drawing.Size(64, 57);
             this.B_Alarm.TabIndex = 28;
@@ -562,7 +557,7 @@
             // 
             this.summerTime.BackColor = System.Drawing.Color.Transparent;
             this.summerTime.Location = new System.Drawing.Point(1106, 49);
-            this.summerTime.Margin = new System.Windows.Forms.Padding(2);
+            this.summerTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.summerTime.Name = "summerTime";
             this.summerTime.Size = new System.Drawing.Size(43, 33);
             this.summerTime.TabIndex = 27;
@@ -573,7 +568,7 @@
             // 
             this.vol.BackColor = System.Drawing.Color.Transparent;
             this.vol.Location = new System.Drawing.Point(220, 49);
-            this.vol.Margin = new System.Windows.Forms.Padding(2);
+            this.vol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.vol.Name = "vol";
             this.vol.Size = new System.Drawing.Size(292, 28);
             this.vol.TabIndex = 26;
@@ -583,7 +578,7 @@
             // 
             this.preset.BackColor = System.Drawing.Color.Transparent;
             this.preset.Location = new System.Drawing.Point(553, 48);
-            this.preset.Margin = new System.Windows.Forms.Padding(2);
+            this.preset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.preset.Name = "preset";
             this.preset.Size = new System.Drawing.Size(292, 28);
             this.preset.TabIndex = 25;
@@ -593,7 +588,7 @@
             // 
             this.weekend.BackColor = System.Drawing.Color.Transparent;
             this.weekend.Location = new System.Drawing.Point(982, 49);
-            this.weekend.Margin = new System.Windows.Forms.Padding(2);
+            this.weekend.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.weekend.Name = "weekend";
             this.weekend.Size = new System.Drawing.Size(113, 28);
             this.weekend.TabIndex = 24;
@@ -603,7 +598,7 @@
             // 
             this.weekday.BackColor = System.Drawing.Color.Transparent;
             this.weekday.Location = new System.Drawing.Point(865, 48);
-            this.weekday.Margin = new System.Windows.Forms.Padding(2);
+            this.weekday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.weekday.Name = "weekday";
             this.weekday.Size = new System.Drawing.Size(104, 28);
             this.weekday.TabIndex = 23;
@@ -613,7 +608,7 @@
             // 
             this.battery_empty.BackColor = System.Drawing.Color.Transparent;
             this.battery_empty.Location = new System.Drawing.Point(1090, 156);
-            this.battery_empty.Margin = new System.Windows.Forms.Padding(2);
+            this.battery_empty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.battery_empty.Name = "battery_empty";
             this.battery_empty.Size = new System.Drawing.Size(45, 28);
             this.battery_empty.TabIndex = 22;
@@ -623,7 +618,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Location = new System.Drawing.Point(1037, 190);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(50, 49);
             this.pictureBox4.TabIndex = 21;
@@ -633,7 +628,7 @@
             // 
             this.hide_a_alarm.BackColor = System.Drawing.Color.Transparent;
             this.hide_a_alarm.Location = new System.Drawing.Point(865, 80);
-            this.hide_a_alarm.Margin = new System.Windows.Forms.Padding(2);
+            this.hide_a_alarm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.hide_a_alarm.Name = "hide_a_alarm";
             this.hide_a_alarm.Size = new System.Drawing.Size(31, 28);
             this.hide_a_alarm.TabIndex = 20;
@@ -644,7 +639,7 @@
             // 
             this.hide_b_alarm.BackColor = System.Drawing.Color.Transparent;
             this.hide_b_alarm.Location = new System.Drawing.Point(865, 108);
-            this.hide_b_alarm.Margin = new System.Windows.Forms.Padding(2);
+            this.hide_b_alarm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.hide_b_alarm.Name = "hide_b_alarm";
             this.hide_b_alarm.Size = new System.Drawing.Size(31, 28);
             this.hide_b_alarm.TabIndex = 19;
@@ -800,7 +795,7 @@
             this.pictureBox2.BackgroundImage = global::Sony_ICF_C717PJ.Properties.Resources.display_without_numbers;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(8, 16);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1190, 254);
             this.pictureBox2.TabIndex = 0;
@@ -813,12 +808,11 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1234, 625);
+            this.ClientSize = new System.Drawing.Size(1244, 640);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "simulator";
             this.Text = "Sony ICF-C717PJ";
-            this.Load += new System.EventHandler(this.simulator_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -847,64 +841,65 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
+        }
+
+        #endregion
+
+
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label first_hour_unit;
+        private System.Windows.Forms.Label second_hour_unit;
+        private System.Windows.Forms.Label double_dot_1;
+        private System.Windows.Forms.Label second_minuts_units;
+        private System.Windows.Forms.Label first_minuts_units;
+        private System.Windows.Forms.Label second_temp_unit;
+        private System.Windows.Forms.Label first_temp_value;
+        private System.Windows.Forms.Label second_alarm_minuts_unit;
+        private System.Windows.Forms.Label first_alarm_minuts_unit;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label second_alarm_hour_unit;
+        private System.Windows.Forms.Label first_alarm_hour_unit;
+        private System.Windows.Forms.Button birds_button;
+        private System.Windows.Forms.Button waves_button;
+        private System.Windows.Forms.Button rain_button;
+        private System.Windows.Forms.Button aquatic_btn;
+        private System.Windows.Forms.Button river_button;
+        private System.Windows.Forms.Button alarm_off_btn;
+        private System.Windows.Forms.Button snooze_btn;
+        private System.Windows.Forms.Button alarm_a_toggle_btn;
+        private System.Windows.Forms.Button alarm_b_toggle_btn;
+        private System.Windows.Forms.Button sleep_btn;
+        private System.Windows.Forms.Button radio_btn;
+        private System.Windows.Forms.Button vol_plus_btn;
+        private System.Windows.Forms.Button vol_minus_btn;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button time_set_plus_B_btn;
+        private System.Windows.Forms.Button time_set_minus_B_btn;
+        private System.Windows.Forms.Button time_set_plus_A_btn;
+        private System.Windows.Forms.Button time_set_minus_A_btn;
+        private System.Windows.Forms.PictureBox hide_a_alarm;
+        private System.Windows.Forms.PictureBox hide_b_alarm;
+        private System.Windows.Forms.PictureBox weekend;
+        private System.Windows.Forms.PictureBox weekday;
+        private System.Windows.Forms.PictureBox battery_empty;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox fish_hider;
+        private System.Windows.Forms.PictureBox wind_hider;
+        private System.Windows.Forms.PictureBox rain_hider;
+        private System.Windows.Forms.PictureBox bird_hider;
+        private System.Windows.Forms.PictureBox waves_hider;
+        private System.Windows.Forms.PictureBox nature_sound;
+        private System.Windows.Forms.PictureBox AM_FM_SLEEP;
+        private System.Windows.Forms.PictureBox radio_buzzer;
+        private System.Windows.Forms.PictureBox A_Alarm;
+        private System.Windows.Forms.PictureBox B_Alarm;
+        private System.Windows.Forms.PictureBox summerTime;
+        private System.Windows.Forms.PictureBox vol;
+        private System.Windows.Forms.PictureBox preset;
+        private System.Windows.Forms.PictureBox wake_up;
+        private System.Windows.Forms.PictureBox audio_in;
     }
-
-    #endregion
-
-    private System.Windows.Forms.GroupBox groupBox1;
-    private System.Windows.Forms.PictureBox pictureBox1;
-    private System.Windows.Forms.GroupBox groupBox2;
-    private System.Windows.Forms.PictureBox pictureBox2;
-    private System.Windows.Forms.Label first_hour_unit;
-    private System.Windows.Forms.Label second_hour_unit;
-    private System.Windows.Forms.Label double_dot_1;
-    private System.Windows.Forms.Label second_minuts_units;
-    private System.Windows.Forms.Label first_minuts_units;
-    private System.Windows.Forms.Label second_temp_unit;
-    private System.Windows.Forms.Label first_temp_value;
-    private System.Windows.Forms.Label second_alarm_minuts_unit;
-    private System.Windows.Forms.Label first_alarm_minuts_unit;
-    private System.Windows.Forms.Label label3;
-    private System.Windows.Forms.Label second_alarm_hour_unit;
-    private System.Windows.Forms.Label first_alarm_hour_unit;
-    private System.Windows.Forms.Button birds_button;
-    private System.Windows.Forms.Button waves_button;
-    private System.Windows.Forms.Button rain_button;
-    private System.Windows.Forms.Button aquatic_btn;
-    private System.Windows.Forms.Button river_button;
-    private System.Windows.Forms.Button alarm_off_btn;
-    private System.Windows.Forms.Button snooze_btn;
-    private System.Windows.Forms.Button alarm_a_toggle_btn;
-    private System.Windows.Forms.Button alarm_b_toggle_btn;
-    private System.Windows.Forms.Button sleep_btn;
-    private System.Windows.Forms.Button radio_btn;
-    private System.Windows.Forms.Button vol_plus_btn;
-    private System.Windows.Forms.Button vol_minus_btn;
-    private System.Windows.Forms.PictureBox pictureBox3;
-    private System.Windows.Forms.Button time_set_plus_B_btn;
-    private System.Windows.Forms.Button time_set_minus_B_btn;
-    private System.Windows.Forms.Button time_set_plus_A_btn;
-    private System.Windows.Forms.Button time_set_minus_A_btn;
-    private System.Windows.Forms.PictureBox hide_a_alarm;
-    private System.Windows.Forms.PictureBox hide_b_alarm;
-    private System.Windows.Forms.PictureBox weekend;
-    private System.Windows.Forms.PictureBox weekday;
-    private System.Windows.Forms.PictureBox battery_empty;
-    private System.Windows.Forms.PictureBox pictureBox4;
-    private System.Windows.Forms.PictureBox fish_hider;
-    private System.Windows.Forms.PictureBox wind_hider;
-    private System.Windows.Forms.PictureBox rain_hider;
-    private System.Windows.Forms.PictureBox bird_hider;
-    private System.Windows.Forms.PictureBox waves_hider;
-    private System.Windows.Forms.PictureBox nature_sound;
-    private System.Windows.Forms.PictureBox AM_FM_SLEEP;
-    private System.Windows.Forms.PictureBox radio_buzzer;
-    private System.Windows.Forms.PictureBox A_Alarm;
-    private System.Windows.Forms.PictureBox B_Alarm;
-    private System.Windows.Forms.PictureBox summerTime;
-    private System.Windows.Forms.PictureBox vol;
-    private System.Windows.Forms.PictureBox preset;
-    private System.Windows.Forms.PictureBox wake_up;
-    private System.Windows.Forms.PictureBox audio_in;
-  }
 }
