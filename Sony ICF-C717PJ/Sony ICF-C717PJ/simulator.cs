@@ -21,6 +21,7 @@ namespace Sony_ICF_C717PJ
         string weekendActive;
         bool summerTimeActived;
         bool alarmActive;
+        int lightLevel;
 
         const int SUMMER_MONTH = 3;
         const int WINTER_MONTH = 11;
@@ -39,6 +40,7 @@ namespace Sony_ICF_C717PJ
             weekDay = date.DayOfWeek;
             weekendActive = WEEKDAY;
             summerTimeActived = false;
+            lightLevel = 1;
 
             checkAutoSummerTime();
             setTemperature();
@@ -136,6 +138,33 @@ namespace Sony_ICF_C717PJ
             second_temp_unit.Text = parsedTemperature[1].ToString();
 
             return temperature;
+        }
+
+        private void setLight()
+        {
+            switch (lightLevel)
+            {
+                case 0:
+                    groupBox2.BackColor = Color.White;
+                    lightLevel++;
+                    break;
+                case 1:
+                    groupBox2.BackColor = Color.DeepSkyBlue;
+                    lightLevel++;
+                    break;
+                case 2:
+                    groupBox2.BackColor = Color.Cyan;
+                    lightLevel = 0;
+                    break;
+                default:
+                    throw new OverflowException();
+                    break;
+            }
+        }
+
+        private void snooze_btn_Click(object sender, EventArgs e)
+        {
+            setLight();
         }
     }   
 }
