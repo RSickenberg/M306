@@ -70,6 +70,52 @@ namespace Sony_ICF_C717PJ
             second_minuts_units.Text = minute[1].ToString();
         }
 
+        private void setDate(bool printYear)
+        {
+            string day = date.Day.ToString();
+            string month = date.Month.ToString();
+            string year = date.Year.ToString();
+
+            if(day.Length < 2)
+            {
+                day = "0" + day;
+            }
+
+            if(month.Length < 2)
+            {
+                month = "0" + month;
+            }
+
+            if(year.Length < 4){
+                for(int i = year.Length; i < year.Length; i ++)
+                {
+                    year = "0" + year;
+                }
+            }
+
+            if(printYear)
+            {
+                first_hour_unit.Text = year[0].ToString();
+                second_hour_unit.Text = year[1].ToString();
+
+                first_minuts_units.Text = year[2].ToString();
+                second_minuts_units.Text = year[3].ToString();
+            }
+            else
+            {
+                first_hour_unit.Text = month[0].ToString();
+                second_hour_unit.Text = month[1].ToString();
+
+                first_minuts_units.Text = day[0].ToString();
+                second_minuts_units.Text = day[1].ToString();
+            }
+        }
+
+        private void setDate()
+        {
+            setDate(false);
+        }
+
         private void checkAutoSummerTime()
         {
             // Check if there is currently a automatic summer time and if we are currently in
