@@ -14,13 +14,13 @@ namespace Sony_ICF_C717PJ
     public partial class simulator : Form
     {
         Alarmes ListAlarmes = new Alarmes();
+        InterfaceController Controller;
 
 
         public simulator()
         {
             InitializeComponent();
-
-         
+            this.Controller = new InterfaceController(this);
         }
 
 
@@ -73,5 +73,10 @@ namespace Sony_ICF_C717PJ
         {
    
         }
-    }
+
+        private void audio_in_btn_Click(object sender, EventArgs e)
+        {
+            this.Controller.ChangeVisibility(this.audio_in, !this.audio_in.Visible);
+        }
+  }
 }
