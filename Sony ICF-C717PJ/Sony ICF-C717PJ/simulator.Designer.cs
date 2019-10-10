@@ -78,6 +78,12 @@
       this.hour_unit = new System.Windows.Forms.Label();
       this.double_dot_1 = new System.Windows.Forms.Label();
       this.pictureBox2 = new System.Windows.Forms.PictureBox();
+      this.groupBox3 = new System.Windows.Forms.GroupBox();
+      this.pictureBox5 = new System.Windows.Forms.PictureBox();
+      this.display_clock_btn = new System.Windows.Forms.Button();
+      this.date_time_zone_btn = new System.Windows.Forms.Button();
+      this.audio_in_btn = new System.Windows.Forms.Button();
+      this.hidden_projector_rotate = new System.Windows.Forms.PictureBox();
       this.groupBox1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,6 +110,9 @@
       ((System.ComponentModel.ISupportInitialize)(this.hide_a_alarm)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.hide_b_alarm)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+      this.groupBox3.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.hidden_projector_rotate)).BeginInit();
       this.SuspendLayout();
       // 
       // groupBox1
@@ -681,6 +690,66 @@
       this.pictureBox2.TabIndex = 0;
       this.pictureBox2.TabStop = false;
       // 
+      // groupBox3
+      // 
+      this.groupBox3.Controls.Add(this.hidden_projector_rotate);
+      this.groupBox3.Controls.Add(this.audio_in_btn);
+      this.groupBox3.Controls.Add(this.date_time_zone_btn);
+      this.groupBox3.Controls.Add(this.display_clock_btn);
+      this.groupBox3.Controls.Add(this.pictureBox5);
+      this.groupBox3.Location = new System.Drawing.Point(704, 1313);
+      this.groupBox3.Name = "groupBox3";
+      this.groupBox3.Size = new System.Drawing.Size(1212, 596);
+      this.groupBox3.TabIndex = 2;
+      this.groupBox3.TabStop = false;
+      this.groupBox3.Text = "Back";
+      // 
+      // pictureBox5
+      // 
+      this.pictureBox5.BackgroundImage = global::Sony_ICF_C717PJ.Properties.Resources.back;
+      this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBox5.Location = new System.Drawing.Point(7, 31);
+      this.pictureBox5.Name = "pictureBox5";
+      this.pictureBox5.Size = new System.Drawing.Size(1183, 559);
+      this.pictureBox5.TabIndex = 0;
+      this.pictureBox5.TabStop = false;
+      // 
+      // display_clock_btn
+      // 
+      this.display_clock_btn.Location = new System.Drawing.Point(403, 122);
+      this.display_clock_btn.Name = "display_clock_btn";
+      this.display_clock_btn.Size = new System.Drawing.Size(191, 97);
+      this.display_clock_btn.TabIndex = 1;
+      this.display_clock_btn.Text = "DisplayClock";
+      this.display_clock_btn.UseVisualStyleBackColor = true;
+      // 
+      // date_time_zone_btn
+      // 
+      this.date_time_zone_btn.Location = new System.Drawing.Point(601, 122);
+      this.date_time_zone_btn.Name = "date_time_zone_btn";
+      this.date_time_zone_btn.Size = new System.Drawing.Size(176, 97);
+      this.date_time_zone_btn.TabIndex = 2;
+      this.date_time_zone_btn.Text = "Date/Time Zone";
+      this.date_time_zone_btn.UseVisualStyleBackColor = true;
+      // 
+      // audio_in_btn
+      // 
+      this.audio_in_btn.Location = new System.Drawing.Point(784, 122);
+      this.audio_in_btn.Name = "audio_in_btn";
+      this.audio_in_btn.Size = new System.Drawing.Size(187, 97);
+      this.audio_in_btn.TabIndex = 3;
+      this.audio_in_btn.Text = "AudioIn";
+      this.audio_in_btn.UseVisualStyleBackColor = true;
+      // 
+      // hidden_projector_rotate
+      // 
+      this.hidden_projector_rotate.BackColor = System.Drawing.Color.Transparent;
+      this.hidden_projector_rotate.Location = new System.Drawing.Point(969, 54);
+      this.hidden_projector_rotate.Name = "hidden_projector_rotate";
+      this.hidden_projector_rotate.Size = new System.Drawing.Size(184, 153);
+      this.hidden_projector_rotate.TabIndex = 40;
+      this.hidden_projector_rotate.TabStop = false;
+      // 
       // simulator
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -688,7 +757,8 @@
       this.AutoSize = true;
       this.BackColor = System.Drawing.Color.White;
       this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-      this.ClientSize = new System.Drawing.Size(2478, 1340);
+      this.ClientSize = new System.Drawing.Size(2478, 1985);
+      this.Controls.Add(this.groupBox3);
       this.Controls.Add(this.groupBox2);
       this.Controls.Add(this.groupBox1);
       this.Margin = new System.Windows.Forms.Padding(6);
@@ -720,6 +790,9 @@
       ((System.ComponentModel.ISupportInitialize)(this.hide_a_alarm)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.hide_b_alarm)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+      this.groupBox3.ResumeLayout(false);
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.hidden_projector_rotate)).EndInit();
       this.ResumeLayout(false);
 
     }
@@ -776,6 +849,12 @@
     private System.Windows.Forms.PictureBox preset;
     private System.Windows.Forms.PictureBox wake_up;
     private System.Windows.Forms.PictureBox audio_in;
+    private System.Windows.Forms.GroupBox groupBox3;
+    private System.Windows.Forms.PictureBox pictureBox5;
+    private System.Windows.Forms.PictureBox hidden_projector_rotate;
+    private System.Windows.Forms.Button audio_in_btn;
+    private System.Windows.Forms.Button date_time_zone_btn;
+    private System.Windows.Forms.Button display_clock_btn;
   }
 }
 
