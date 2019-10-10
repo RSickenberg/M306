@@ -584,7 +584,6 @@
       this.hide_a_alarm.Size = new System.Drawing.Size(62, 54);
       this.hide_a_alarm.TabIndex = 20;
       this.hide_a_alarm.TabStop = false;
-      this.hide_a_alarm.Visible = false;
       // 
       // hide_b_alarm
       // 
@@ -594,7 +593,6 @@
       this.hide_b_alarm.Size = new System.Drawing.Size(62, 54);
       this.hide_b_alarm.TabIndex = 19;
       this.hide_b_alarm.TabStop = false;
-      this.hide_b_alarm.Visible = false;
       // 
       // alarm_minuts_unit
       // 
