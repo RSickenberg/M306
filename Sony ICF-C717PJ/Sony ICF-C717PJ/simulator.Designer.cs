@@ -263,6 +263,7 @@
       this.alarm_a_toggle_btn.TabIndex = 10;
       this.alarm_a_toggle_btn.Text = "ALARM ON/OFF    A";
       this.alarm_a_toggle_btn.UseVisualStyleBackColor = false;
+      this.alarm_a_toggle_btn.Click += new System.EventHandler(this.alarm_a_toggle_btn_Click);
       // 
       // alarm_b_toggle_btn
       // 
@@ -314,6 +315,7 @@
       this.alarm_off_btn.TabIndex = 6;
       this.alarm_off_btn.Text = "OFF";
       this.alarm_off_btn.UseVisualStyleBackColor = false;
+      this.alarm_off_btn.Click += new System.EventHandler(this.alarm_off_btn_Click);
       // 
       // aquatic_btn
       // 
@@ -324,6 +326,7 @@
       this.aquatic_btn.Size = new System.Drawing.Size(142, 75);
       this.aquatic_btn.TabIndex = 5;
       this.aquatic_btn.UseVisualStyleBackColor = true;
+      this.aquatic_btn.Click += new System.EventHandler(this.aquatic_btn_Click);
       // 
       // river_button
       // 
@@ -334,6 +337,7 @@
       this.river_button.Size = new System.Drawing.Size(142, 75);
       this.river_button.TabIndex = 4;
       this.river_button.UseVisualStyleBackColor = true;
+      this.river_button.Click += new System.EventHandler(this.river_button_Click);
       // 
       // rain_button
       // 
@@ -344,6 +348,7 @@
       this.rain_button.Size = new System.Drawing.Size(142, 75);
       this.rain_button.TabIndex = 3;
       this.rain_button.UseVisualStyleBackColor = true;
+      this.rain_button.Click += new System.EventHandler(this.rain_button_Click);
       // 
       // birds_button
       // 
@@ -354,6 +359,7 @@
       this.birds_button.Size = new System.Drawing.Size(167, 75);
       this.birds_button.TabIndex = 2;
       this.birds_button.UseVisualStyleBackColor = true;
+      this.birds_button.Click += new System.EventHandler(this.birds_button_Click);
       // 
       // waves_button
       // 
@@ -365,6 +371,7 @@
       this.waves_button.Size = new System.Drawing.Size(151, 73);
       this.waves_button.TabIndex = 1;
       this.waves_button.UseVisualStyleBackColor = false;
+      this.waves_button.Click += new System.EventHandler(this.waves_button_Click);
       // 
       // pictureBox1
       // 
