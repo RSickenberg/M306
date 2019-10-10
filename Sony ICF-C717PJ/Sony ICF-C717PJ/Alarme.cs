@@ -15,6 +15,7 @@ namespace Sony_ICF_C717PJ
         private string _name;
         private DateTime _heure;
         private SoundPlayer _sound;
+        private bool _modeEditActivated;
         private bool _activated;
         private bool _weekActivated;
         private bool _weekendActivated;
@@ -83,8 +84,7 @@ namespace Sony_ICF_C717PJ
                 Activated = true;
             }
         }
-
- 
         
+
     }
 }

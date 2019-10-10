@@ -71,8 +71,7 @@ namespace Sony_ICF_C717PJ
 
         private void simulator_Load(object sender, EventArgs e)
         {
-            first_hour_unit.Text = DateTime.Now.Hour.ToString();
-            second_hour_unit.Text = DateTime.Now.Hour.ToString();
+   
         }
     }
 }
