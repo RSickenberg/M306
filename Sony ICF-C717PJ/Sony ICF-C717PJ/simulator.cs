@@ -32,10 +32,7 @@ namespace Sony_ICF_C717PJ
         public simulator()
         {
             InitializeComponent();
-        }
 
-        private void simulator_Load(object sender, EventArgs e)
-        {
             date = DateTime.Now;
             weekDay = date.DayOfWeek;
             weekendActive = WEEKDAY;
