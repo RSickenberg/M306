@@ -20,7 +20,7 @@ namespace Sony_ICF_C717PJ
         DayOfWeek weekDay;
         bool weekendActive;
         bool summerTimeAuto;
-        bool summerTime;
+        bool summerTimeActivated;
         bool alarmActive;
 
         const int SUMMER_MONTH = 3;
@@ -33,11 +33,20 @@ namespace Sony_ICF_C717PJ
 
         private void simulator_Load(object sender, EventArgs e)
         {
-            date = DateTime.Now;
-            weekDay = date.DayOfWeek;
             weekendActive = false;
             summerTimeAuto = false;
-            summerTime = false;
+            summerTimeActivated = false;
+            date = DateTime.Now;
+            weekDay = date.DayOfWeek;
+
+            setUpLaunchTime();
+        }
+
+        private void setUpLaunchTime()
+        {
+            string parsedTime = date.ToString();
+
+
         }
 
         private void checkAutoSummerTime()
@@ -45,7 +54,7 @@ namespace Sony_ICF_C717PJ
             // Check if there is currently a automatic summer time and if we are currently in
             if (summerTimeAuto == true && date.Month >  SUMMER_MONTH && date.Month < WINTER_MONTH)
             {
-                summerTime = true;
+                summerTimeActivated = true;
             }
         }
 
