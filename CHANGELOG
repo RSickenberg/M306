@@ -3,6 +3,8 @@ VERSION 0  GIT SETUP
 ====================
 
    Version 0.1 - Form
+      10/10/2019 08:23  0.1.3  Added back + UI relative
+      10/10/2019 07:23  0.1.2  UI Fixes
       03/10/2019 10:04  0.1.1  Added labels / Buttons / Hidded elements contextually visible or hidden.
       26/09/2019 09:59  0.1.0  initial release
 
