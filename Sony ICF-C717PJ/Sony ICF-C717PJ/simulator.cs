@@ -18,16 +18,16 @@ namespace Sony_ICF_C717PJ
     {
         DateTime date;
         DayOfWeek weekDay;
-        bool weekendActive;
-        bool summerTimeAuto;
-        bool summerTimeActivated;
-        bool alarmActive;
-        string weekendActive;
+        string weekendActiveState;
         int lightLevel;
         int displayLevel;
         int volume;
         bool alarmAActivated;
         bool alarmBActivated;
+        bool DateTimeZoneHolded;
+        int milisecondsHolded;
+        bool changingClock;
+        int DateTimeZoneOvertime;
 
         const int SUMMER_MONTH = 3;
         const int WINTER_MONTH = 11;
@@ -39,20 +39,22 @@ namespace Sony_ICF_C717PJ
 
         public simulator()
         {
-            InitializeComponent();
-
-            date = DateTime.Now;
-            weekDay = date.DayOfWeek;
-            weekendActive = WEEKDAY;
             lightLevel = 1;
             displayLevel = 1;
+            date = DateTime.Now;
+            weekDay = date.DayOfWeek;
+            weekendActiveState = WEEKDAY;
             volume = 10;
             alarmAActivated = false;
             alarmBActivated = false;
+            DateTimeZoneHolded = false;
+            changingClock = false;
+
+            InitializeComponent();
 
             checkAutoSummerTime();
             setTemperature();
-            setWeekend(weekendActive);
+            setWeekend(weekendActiveState);
             setHour();
         }
 
@@ -116,21 +118,21 @@ namespace Sony_ICF_C717PJ
         {
             if (activated == WEEKEND)
             {
-                weekendActive = WEEKEND;
+                weekendActiveState = WEEKEND;
                 weekend.Visible = false;
                 weekday.Visible = true;
                 vol.Visible = true;
             }
             else if(activated == WEEKDAY)
             {
-                weekendActive = WEEKDAY;
+                weekendActiveState = WEEKDAY;
                 weekend.Visible = true;
                 weekday.Visible = false;
                 vol.Visible = true;
             }
             else
             {
-                weekendActive = EVERYDAY;
+                weekendActiveState = EVERYDAY;
                 weekend.Visible = false;
                 weekday.Visible = true;
                 vol.Visible = true;
@@ -211,7 +213,7 @@ namespace Sony_ICF_C717PJ
                     break;
             }
         }
-
+        
         private void snooze_btn_Click(object sender, EventArgs e)
         {
             setLight();
@@ -221,15 +223,15 @@ namespace Sony_ICF_C717PJ
         {
             switch (displayLevel)
             {
-                case 1:
+                case 0:
                     setHour();
                     displayLevel++;
                     break;
-                case 2:
+                case 1:
                     setDate();
                     displayLevel++;
                     break;
-                case 3:
+                case 2:
                     setDate(true);
                     displayLevel = 1;
                     break;
@@ -270,6 +272,77 @@ namespace Sony_ICF_C717PJ
         private void alarm_b_toggle_btn_Click(object sender, EventArgs e)
         {
             setAlarm(B);
+        }
+
+        private void holdDateTimeZone_Tick(object sender, EventArgs e)
+        {
+            if (DateTimeZoneHolded)
+            {
+                milisecondsHolded += 100;
+
+                label1.Text = milisecondsHolded.ToString();
+
+                if (milisecondsHolded  == 2000)
+                {
+                    changingClock = true;
+
+                    DateTimeZoneHolded = false;
+
+                    milisecondsHolded = 0;
+                }
+            }
+        }
+
+        private void date_time_zone_btn_MouseDown(object sender, MouseEventArgs e)
+        {
+            DateTimeZoneHolded = true;
+        }
+
+        private void date_time_zone_btn_MouseUp(object sender, MouseEventArgs e)
+        {
+            DateTimeZoneHolded = false;
+        }
+
+        private void DateChangeTimer_Tick(object sender, EventArgs e)
+        {
+            if (changingClock)
+            {
+                DateTimeZoneOvertime += 100;
+
+                if (DateTimeZoneOvertime == 65000)
+                {
+                    changingClock = false;
+                }
+            }
+        }
+
+        private void time_set_minus_B_btn_Click(object sender, EventArgs e)
+        {
+            if (DateTimeZoneHolded)
+            {
+
+            }
+        }
+
+        private void time_set_plus_B_btn_Click(object sender, EventArgs e)
+        {
+            if (DateTimeZoneHolded)
+            {
+
+            }
+        }
+
+        private void digitClickTimer_Tick(object sender, EventArgs e)
+        {
+            if (changingClock)
+            {
+                hour_unit.Visible = false;
+                minuts_units.Visible = false;
+
+                hour_unit.Visible = true;
+                minuts_units.Visible = true;
+            }
+
         }
     }   
 }
