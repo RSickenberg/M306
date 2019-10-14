@@ -81,10 +81,8 @@
             this.date_time_zone_btn = new System.Windows.Forms.Button();
             this.display_clock_btn = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.holdDateTimeZoneTimer = new System.Windows.Forms.Timer(this.components);
             this.DateChangeTimer = new System.Windows.Forms.Timer(this.components);
-            this.digitClickTimer = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -202,6 +200,7 @@
             this.time_set_plus_A_btn.TabIndex = 15;
             this.time_set_plus_A_btn.Text = "+";
             this.time_set_plus_A_btn.UseVisualStyleBackColor = false;
+            this.time_set_plus_A_btn.Click += new System.EventHandler(this.time_set_plus_A_btn_Click);
             // 
             // time_set_minus_A_btn
             // 
@@ -217,6 +216,7 @@
             this.time_set_minus_A_btn.TabIndex = 14;
             this.time_set_minus_A_btn.Text = "-";
             this.time_set_minus_A_btn.UseVisualStyleBackColor = false;
+            this.time_set_minus_A_btn.Click += new System.EventHandler(this.time_set_minus_A_btn_Click);
             // 
             // vol_plus_btn
             // 
@@ -797,8 +797,6 @@
             this.date_time_zone_btn.TabIndex = 2;
             this.date_time_zone_btn.Text = "Date/Time Zone";
             this.date_time_zone_btn.UseVisualStyleBackColor = true;
-            this.date_time_zone_btn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.date_time_zone_btn_MouseDown);
-            this.date_time_zone_btn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.date_time_zone_btn_MouseUp);
             // 
             // display_clock_btn
             // 
@@ -809,6 +807,9 @@
             this.display_clock_btn.TabIndex = 1;
             this.display_clock_btn.Text = "DisplayClock";
             this.display_clock_btn.UseVisualStyleBackColor = true;
+            this.display_clock_btn.Click += new System.EventHandler(this.display_clock_btn_Click);
+            this.display_clock_btn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.display_clock_btn_MouseDown);
+            this.display_clock_btn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.display_clock_btn_MouseUp);
             // 
             // pictureBox5
             // 
@@ -821,15 +822,6 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1052, 850);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
-            // 
             // holdDateTimeZoneTimer
             // 
             this.holdDateTimeZoneTimer.Enabled = true;
@@ -840,11 +832,6 @@
             this.DateChangeTimer.Enabled = true;
             this.DateChangeTimer.Tick += new System.EventHandler(this.DateChangeTimer_Tick);
             // 
-            // digitClickTimer
-            // 
-            this.digitClickTimer.Enabled = true;
-            this.digitClickTimer.Tick += new System.EventHandler(this.digitClickTimer_Tick);
-            // 
             // simulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -853,7 +840,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1284, 1047);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -890,7 +876,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.hidden_projector_rotate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -952,9 +937,7 @@
     private System.Windows.Forms.Button audio_in_btn;
     private System.Windows.Forms.Button date_time_zone_btn;
     private System.Windows.Forms.Button display_clock_btn;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer holdDateTimeZoneTimer;
         private System.Windows.Forms.Timer DateChangeTimer;
-        private System.Windows.Forms.Timer digitClickTimer;
     }
 }

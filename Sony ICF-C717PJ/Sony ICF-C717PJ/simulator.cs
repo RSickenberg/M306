@@ -28,6 +28,7 @@ namespace Sony_ICF_C717PJ
         int milisecondsHolded;
         bool changingClock;
         int DateTimeZoneOvertime;
+        string currentMode;
 
         const int SUMMER_MONTH = 3;
         const int WINTER_MONTH = 11;
@@ -36,6 +37,13 @@ namespace Sony_ICF_C717PJ
         const string EVERYDAY = "everyday";
         const string A = "A";
         const string B = "B";
+        const string CURRENT_MODE_YEAR = "year";
+        const string CURRENT_MODE_MONTH = "month";
+        const string CURRENT_MODE_DAY = "day";
+        const string CURRENT_MODE_HOUR = "hour";
+        const string CURRENT_MODE_MINUTE = "minute";
+        const string ACTION_PLUS = "plus";
+        const string ACTION_MOINS = "moins";
 
         public simulator()
         {
@@ -213,6 +221,93 @@ namespace Sony_ICF_C717PJ
                     break;
             }
         }
+
+        private void changeClock(string currentMode, string action)
+        {
+            switch (currentMode)
+            {
+                case CURRENT_MODE_YEAR:
+                    if (action == ACTION_PLUS)
+                    {
+                        date.AddYears(1);
+                    }
+                    else if (action == ACTION_MOINS)
+                    {
+                        date.AddYears(-1);
+                    }
+                    else
+                    {
+                        throw new Exception();
+                    }
+
+                    setDate(true);
+                    break;
+                case CURRENT_MODE_MONTH:
+                    if (action == ACTION_PLUS)
+                    {
+                        date.AddMonths(1);
+                    }
+                    else if (action == ACTION_MOINS)
+                    {
+                        date.AddMonths(-1);
+                    }
+                    else
+                    {
+                        throw new Exception();
+                    }
+
+                    setDate();
+                    break;
+                case CURRENT_MODE_DAY:
+                    if (action == ACTION_PLUS)
+                    {
+                        date.AddDays(1);
+                    }
+                    else if (action == ACTION_MOINS)
+                    {
+                        date.AddDays(-1);
+                    }
+                    else
+                    {
+                        throw new Exception();
+                    }
+                    setDate();
+                    break;
+                case CURRENT_MODE_HOUR:
+                    if (action == ACTION_PLUS)
+                    {
+                        date.AddHours(1);
+                    }
+                    else if (action == ACTION_MOINS)
+                    {
+                        date.AddHours(-1);
+                    }
+                    else
+                    {
+                        throw new Exception();
+                    }
+                    setHour();
+                    break;
+                case CURRENT_MODE_MINUTE:
+                    if (action == ACTION_PLUS)
+                    {
+                        date.AddMinutes(1);
+                    }
+                    else if (action == ACTION_MOINS)
+                    {
+                        date.AddMinutes(-1);
+                    }
+                    else
+                    {
+                        throw new Exception();
+                    }
+                    setHour();
+                    break;
+                default:
+                    throw new Exception();
+                    break;
+            }
+        }
         
         private void snooze_btn_Click(object sender, EventArgs e)
         {
@@ -260,8 +355,6 @@ namespace Sony_ICF_C717PJ
                 minuts_units.Text = "";
                 vol.Visible = false;
             }
-
-            
         }
 
         private void alarm_a_toggle_btn_Click(object sender, EventArgs e)
@@ -280,27 +373,19 @@ namespace Sony_ICF_C717PJ
             {
                 milisecondsHolded += 100;
 
-                label1.Text = milisecondsHolded.ToString();
-
                 if (milisecondsHolded  == 2000)
                 {
                     changingClock = true;
 
                     DateTimeZoneHolded = false;
 
+                    currentMode = CURRENT_MODE_YEAR;
+
+                    setDate(true);
+
                     milisecondsHolded = 0;
                 }
             }
-        }
-
-        private void date_time_zone_btn_MouseDown(object sender, MouseEventArgs e)
-        {
-            DateTimeZoneHolded = true;
-        }
-
-        private void date_time_zone_btn_MouseUp(object sender, MouseEventArgs e)
-        {
-            DateTimeZoneHolded = false;
         }
 
         private void DateChangeTimer_Tick(object sender, EventArgs e)
@@ -312,6 +397,7 @@ namespace Sony_ICF_C717PJ
                 if (DateTimeZoneOvertime == 65000)
                 {
                     changingClock = false;
+                    setHour();
                 }
             }
         }
@@ -320,7 +406,7 @@ namespace Sony_ICF_C717PJ
         {
             if (DateTimeZoneHolded)
             {
-
+                changeClock(currentMode, ACTION_MOINS);
             }
         }
 
@@ -328,21 +414,70 @@ namespace Sony_ICF_C717PJ
         {
             if (DateTimeZoneHolded)
             {
-
+                changeClock(currentMode, ACTION_PLUS);
             }
         }
 
-        private void digitClickTimer_Tick(object sender, EventArgs e)
+        private void time_set_plus_A_btn_Click(object sender, EventArgs e)
         {
-            if (changingClock)
+            if (DateTimeZoneHolded)
             {
-                hour_unit.Visible = false;
-                minuts_units.Visible = false;
-
-                hour_unit.Visible = true;
-                minuts_units.Visible = true;
+                changeClock(currentMode, ACTION_PLUS);
             }
+        }
 
+        private void time_set_minus_A_btn_Click(object sender, EventArgs e)
+        {
+            changeClock(currentMode, ACTION_MOINS);
+        }
+
+        private void display_clock_btn_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (!changingClock)
+            {
+                DateTimeZoneHolded = true;
+            }
+        }
+
+        private void display_clock_btn_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (!changingClock)
+            {
+                DateTimeZoneHolded = false;
+            }
+        }
+
+        private void display_clock_btn_Click(object sender, EventArgs e)
+        {
+            if(changingClock)
+            {
+                switch(currentMode)
+                {
+                    case CURRENT_MODE_YEAR:
+                        currentMode = CURRENT_MODE_MONTH;
+                        setDate();
+                        break;
+                    case CURRENT_MODE_MONTH:
+                        currentMode = CURRENT_MODE_DAY;
+                        setDate();
+                        break;
+                    case CURRENT_MODE_DAY:
+                        currentMode = CURRENT_MODE_HOUR;
+                        setHour();
+                        break;
+                    case CURRENT_MODE_HOUR:
+                        currentMode = CURRENT_MODE_MINUTE;
+                        setHour();
+                        break;
+                    case CURRENT_MODE_MINUTE:
+                        changingClock = false;
+                        setHour();
+                        break;
+                    default:
+                        throw new Exception();
+                        break;
+                }
+            }
         }
     }   
 }
