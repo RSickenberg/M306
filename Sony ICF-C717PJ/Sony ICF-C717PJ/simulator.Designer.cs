@@ -83,6 +83,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.holdDateTimeZoneTimer = new System.Windows.Forms.Timer(this.components);
             this.DateChangeTimer = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -797,6 +798,7 @@
             this.date_time_zone_btn.TabIndex = 2;
             this.date_time_zone_btn.Text = "Date/Time Zone";
             this.date_time_zone_btn.UseVisualStyleBackColor = true;
+            this.date_time_zone_btn.Click += new System.EventHandler(this.date_time_zone_btn_Click);
             // 
             // display_clock_btn
             // 
@@ -832,6 +834,15 @@
             this.DateChangeTimer.Enabled = true;
             this.DateChangeTimer.Tick += new System.EventHandler(this.DateChangeTimer_Tick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1077, 761);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "label1";
+            // 
             // simulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -840,6 +851,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1284, 1047);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -876,6 +888,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.hidden_projector_rotate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -939,5 +952,6 @@
     private System.Windows.Forms.Button display_clock_btn;
         private System.Windows.Forms.Timer holdDateTimeZoneTimer;
         private System.Windows.Forms.Timer DateChangeTimer;
+        private System.Windows.Forms.Label label1;
     }
 }

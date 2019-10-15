@@ -47,8 +47,8 @@ namespace Sony_ICF_C717PJ
 
         public simulator()
         {
-            lightLevel = 1;
-            displayLevel = 1;
+            lightLevel = 0;
+            displayLevel = 0;
             date = DateTime.Now;
             weekDay = date.DayOfWeek;
             weekendActiveState = WEEKDAY;
@@ -229,11 +229,11 @@ namespace Sony_ICF_C717PJ
                 case CURRENT_MODE_YEAR:
                     if (action == ACTION_PLUS)
                     {
-                        date.AddYears(1);
+                        date = date.AddYears(1);
                     }
                     else if (action == ACTION_MOINS)
                     {
-                        date.AddYears(-1);
+                        date = date.AddYears(-1);
                     }
                     else
                     {
@@ -245,11 +245,11 @@ namespace Sony_ICF_C717PJ
                 case CURRENT_MODE_MONTH:
                     if (action == ACTION_PLUS)
                     {
-                        date.AddMonths(1);
+                        date = date.AddMonths(1);
                     }
                     else if (action == ACTION_MOINS)
                     {
-                        date.AddMonths(-1);
+                        date = date.AddMonths(-1);
                     }
                     else
                     {
@@ -261,11 +261,11 @@ namespace Sony_ICF_C717PJ
                 case CURRENT_MODE_DAY:
                     if (action == ACTION_PLUS)
                     {
-                        date.AddDays(1);
+                        date = date.AddDays(1);
                     }
                     else if (action == ACTION_MOINS)
                     {
-                        date.AddDays(-1);
+                        date = date.AddDays(-1);
                     }
                     else
                     {
@@ -276,11 +276,11 @@ namespace Sony_ICF_C717PJ
                 case CURRENT_MODE_HOUR:
                     if (action == ACTION_PLUS)
                     {
-                        date.AddHours(1);
+                        date = date.AddHours(1);
                     }
                     else if (action == ACTION_MOINS)
                     {
-                        date.AddHours(-1);
+                        date = date.AddHours(-1);
                     }
                     else
                     {
@@ -291,11 +291,11 @@ namespace Sony_ICF_C717PJ
                 case CURRENT_MODE_MINUTE:
                     if (action == ACTION_PLUS)
                     {
-                        date.AddMinutes(1);
+                        date = date.AddMinutes(1);
                     }
                     else if (action == ACTION_MOINS)
                     {
-                        date.AddMinutes(-1);
+                        date = date.AddMinutes(-1);
                     }
                     else
                     {
@@ -373,6 +373,8 @@ namespace Sony_ICF_C717PJ
             {
                 milisecondsHolded += 100;
 
+                label1.Text = milisecondsHolded.ToString();
+
                 if (milisecondsHolded  == 2000)
                 {
                     changingClock = true;
@@ -384,6 +386,8 @@ namespace Sony_ICF_C717PJ
                     setDate(true);
 
                     milisecondsHolded = 0;
+
+                    System.Threading.Thread.Sleep(1000);
                 }
             }
         }
@@ -404,7 +408,7 @@ namespace Sony_ICF_C717PJ
 
         private void time_set_minus_B_btn_Click(object sender, EventArgs e)
         {
-            if (DateTimeZoneHolded)
+            if (changingClock)
             {
                 changeClock(currentMode, ACTION_MOINS);
             }
@@ -412,7 +416,7 @@ namespace Sony_ICF_C717PJ
 
         private void time_set_plus_B_btn_Click(object sender, EventArgs e)
         {
-            if (DateTimeZoneHolded)
+            if (changingClock)
             {
                 changeClock(currentMode, ACTION_PLUS);
             }
@@ -420,7 +424,7 @@ namespace Sony_ICF_C717PJ
 
         private void time_set_plus_A_btn_Click(object sender, EventArgs e)
         {
-            if (DateTimeZoneHolded)
+            if (changingClock)
             {
                 changeClock(currentMode, ACTION_PLUS);
             }
@@ -428,7 +432,10 @@ namespace Sony_ICF_C717PJ
 
         private void time_set_minus_A_btn_Click(object sender, EventArgs e)
         {
-            changeClock(currentMode, ACTION_MOINS);
+            if (changingClock)
+            {
+                changeClock(currentMode, ACTION_MOINS);
+            }
         }
 
         private void display_clock_btn_MouseDown(object sender, MouseEventArgs e)
