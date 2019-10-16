@@ -29,6 +29,7 @@ namespace Sony_ICF_C717PJ
         bool changingClock;
         int DateTimeZoneOvertime;
         string currentMode;
+        bool blinkState;
 
         const int SUMMER_MONTH = 3;
         const int WINTER_MONTH = 11;
@@ -57,6 +58,7 @@ namespace Sony_ICF_C717PJ
             alarmBActivated = false;
             DateTimeZoneHolded = false;
             changingClock = false;
+            blinkState = true;
 
             InitializeComponent();
 
@@ -373,8 +375,6 @@ namespace Sony_ICF_C717PJ
             {
                 milisecondsHolded += 100;
 
-                label1.Text = milisecondsHolded.ToString();
-
                 if (milisecondsHolded  == 2000)
                 {
                     changingClock = true;
@@ -386,8 +386,6 @@ namespace Sony_ICF_C717PJ
                     setDate(true);
 
                     milisecondsHolded = 0;
-
-                    System.Threading.Thread.Sleep(1000);
                 }
             }
         }
@@ -444,18 +442,7 @@ namespace Sony_ICF_C717PJ
             {
                 DateTimeZoneHolded = true;
             }
-        }
 
-        private void display_clock_btn_MouseUp(object sender, MouseEventArgs e)
-        {
-            if (!changingClock)
-            {
-                DateTimeZoneHolded = false;
-            }
-        }
-
-        private void display_clock_btn_Click(object sender, EventArgs e)
-        {
             if(changingClock)
             {
                 switch(currentMode)
@@ -485,6 +472,49 @@ namespace Sony_ICF_C717PJ
                         break;
                 }
             }
+        }
+
+        private void display_clock_btn_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (!changingClock)
+            {
+                DateTimeZoneHolded = false;
+            }
+        }
+
+        private void BlinkTimer_Tick(object sender, EventArgs e)
+        {
+            if(changingClock)
+            {
+                blinkState = !blinkState;
+
+                switch(currentMode)
+                {
+                    case CURRENT_MODE_YEAR:
+                        hour_unit.Visible = blinkState;
+                        minuts_units.Visible = blinkState;
+                        break;
+                    case CURRENT_MODE_MONTH:
+                    case CURRENT_MODE_HOUR:
+                        hour_unit.Visible = blinkState;
+                        minuts_units.Visible = true;
+                        break;
+                    case CURRENT_MODE_DAY:
+                    case CURRENT_MODE_MINUTE:
+                        hour_unit.Visible = true;
+                        minuts_units.Visible = blinkState;
+                        break;
+                    default:
+                        throw new Exception();
+                        break;
+                }
+            }
+            else
+            {
+                hour_unit.Visible = true;
+                minuts_units.Visible = true;
+            }
+            
         }
     }   
 }

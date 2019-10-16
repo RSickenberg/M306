@@ -83,7 +83,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.holdDateTimeZoneTimer = new System.Windows.Forms.Timer(this.components);
             this.DateChangeTimer = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
+            this.BlinkTimer = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -715,7 +715,7 @@
             this.minuts_units.Size = new System.Drawing.Size(234, 166);
             this.minuts_units.TabIndex = 5;
             this.minuts_units.Text = "00";
-            this.minuts_units.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.minuts_units.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // hour_unit
             // 
@@ -728,7 +728,7 @@
             this.hour_unit.Size = new System.Drawing.Size(234, 166);
             this.hour_unit.TabIndex = 3;
             this.hour_unit.Text = "00";
-            this.hour_unit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.hour_unit.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // double_dot_1
             // 
@@ -809,7 +809,6 @@
             this.display_clock_btn.TabIndex = 1;
             this.display_clock_btn.Text = "DisplayClock";
             this.display_clock_btn.UseVisualStyleBackColor = true;
-            this.display_clock_btn.Click += new System.EventHandler(this.display_clock_btn_Click);
             this.display_clock_btn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.display_clock_btn_MouseDown);
             this.display_clock_btn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.display_clock_btn_MouseUp);
             // 
@@ -834,14 +833,11 @@
             this.DateChangeTimer.Enabled = true;
             this.DateChangeTimer.Tick += new System.EventHandler(this.DateChangeTimer_Tick);
             // 
-            // label1
+            // BlinkTimer
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1077, 761);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.BlinkTimer.Enabled = true;
+            this.BlinkTimer.Interval = 400;
+            this.BlinkTimer.Tick += new System.EventHandler(this.BlinkTimer_Tick);
             // 
             // simulator
             // 
@@ -851,7 +847,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1284, 1047);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -888,7 +883,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.hidden_projector_rotate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -952,6 +946,6 @@
     private System.Windows.Forms.Button display_clock_btn;
         private System.Windows.Forms.Timer holdDateTimeZoneTimer;
         private System.Windows.Forms.Timer DateChangeTimer;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer BlinkTimer;
     }
 }
