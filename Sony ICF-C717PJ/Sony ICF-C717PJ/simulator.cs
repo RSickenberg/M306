@@ -35,6 +35,7 @@ namespace Sony_ICF_C717PJ
         {
             this.player = new SoundPlayer(Properties.Resources.waves1);
             player.Play();
+            
         }
 
         private void birds_button_Click(object sender, EventArgs e)
