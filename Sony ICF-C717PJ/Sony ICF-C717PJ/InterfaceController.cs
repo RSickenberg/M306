@@ -15,10 +15,12 @@ namespace Sony_ICF_C717PJ
       get { return _simulator; }
       set { _simulator = value; }
     }
+    private List<PictureBox> listOfPicturesBoxForNaturalSound;
 
     public InterfaceController(simulator simulator)
     {
       this.Simulator = simulator;
+      setup();
     }
 
     public void ChangeVisibility(Control element, bool newState)
@@ -30,6 +32,20 @@ namespace Sony_ICF_C717PJ
       {
         element.Hide();
       }
+    }
+
+    private void setup()
+    {
+      foreach (Control control in Simulator.Controls)
+      {
+        if (control is PictureBox)
+        {
+          listOfPicturesBoxForNaturalSound.Add(control as PictureBox);
+          Console.WriteLine("Added: " + control.Name);
+        }
+      }
+
+      Console.WriteLine("All pictureBoxes is added");
     }
   }
 }
