@@ -20,8 +20,8 @@ namespace Sony_ICF_C717PJ
         {
             ListAlarmes = new List<Alarme>();
 
-            Alarme A = new Alarme("A", DateTime.Now ,null,false,false,false);
-            Alarme B = new Alarme("B", DateTime.Now, null, false, false, false);
+            Alarme A = new Alarme("A", DateTime.Now, "", 0,0,0,false,false,false,false,0);
+            Alarme B = new Alarme("B", DateTime.Now, "", 0, 0, 0, false, false, false, false, 0);
 
             ListAlarmes.Add(A);
             ListAlarmes.Add(B);

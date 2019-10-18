@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Alarme.cs" />
     <Compile Include="Alarmes.cs" />
+    <Compile Include="FormControlls.cs" />
     <Compile Include="IControl.cs" />
     <Compile Include="InterfaceController.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

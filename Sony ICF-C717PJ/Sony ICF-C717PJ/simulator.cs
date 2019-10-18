@@ -13,9 +13,12 @@ namespace Sony_ICF_C717PJ
 {
     public partial class simulator : Form
     {
-        Alarmes ListAlarmes = new Alarmes();
+        Alarmes MesAlarmes = new Alarmes();
+        FormControlls FormControlls;
         InterfaceController controller;
         SoundPlayer player;
+        Alarme A;
+        Alarme B;
 
         public simulator()
         {
@@ -24,11 +27,27 @@ namespace Sony_ICF_C717PJ
 
             this.player = new SoundPlayer();
             player.InitializeLifetimeService();
+
+            this.A = MesAlarmes.ListAlarmes.ElementAt(0);
+            this.B = MesAlarmes.ListAlarmes.ElementAt(1);
+
+            
+            
+        }
+
+        public Control GetControll(string name)
+        {
+            return this;
+        }
+        public void RefreshView()
+        {
+            
         }
 
         private void alarm_a_toggle_btn_Click(object sender, EventArgs e)
         {
-            ListAlarmes.ListAlarmes[0].Activate();
+            MesAlarmes.ListAlarmes[0].ActiverAlarme();
+            controller.ChangeVisibility(this.A_Alarm, this.A.AlarmeActive);
         }
 
         private void waves_button_Click(object sender, EventArgs e)
