@@ -48,13 +48,15 @@
   <ItemGroup>
     <Compile Include="Alarme.cs" />
     <Compile Include="Alarmes.cs" />
-    <Compile Include="IControl.cs" />
-    <Compile Include="InterfaceController.cs" />
+    <Compile Include="AllTime.cs" />
+    <Compile Include="FormControlls.cs" />
+    <Compile Include="AffichageController.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Radios.cs" />
     <Compile Include="simulator.cs">
       <SubType>Form</SubType>
     </Compile>
